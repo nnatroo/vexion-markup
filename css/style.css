@@ -325,3 +325,98 @@ body {
     display: flex;
     gap: 3.875rem;
 }
+
+.about-app-container {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.about-app-container-titles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.about-app-container-titles h3 {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    background: linear-gradient(269.5deg, #F4F1F7 14.41%, #D5CCEC 37.86%, #ADBBEA 62.88%, #DDE2F2 89.46%), linear-gradient(0deg, #F9F8F6, #F9F8F6), url(.png);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.about-app-container-titles h1 {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 70px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.about-app-container-titles p {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #7F7F90;
+}
+
+.about-app-container-cards {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.about-app-container-cards img {
+    width: 385px;
+    background: linear-gradient(360deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.05) 100%), #05050A;
+    box-shadow: inset 0px 10px 25px rgba(230, 221, 254, 0.1);
+    border-radius: 24px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.about-app-container-cards img:hover {
+    filter: drop-shadow(0px 4px 12px #ffffff);
+    transform: scale(1.06);
+}
+
+.about-app-container-cards img:active {
+    filter: drop-shadow(0px 4px 10px #ffffff);
+    transform: rotate(-2deg);
+}
+
+.about-app-container-cards .col2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.about-app-container-cards .col3 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
