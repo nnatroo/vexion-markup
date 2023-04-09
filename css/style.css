@@ -7,6 +7,19 @@
     color: black;
 } */
 
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #A097B4;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -128,6 +141,8 @@ body {
 
 .main-container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     color: white;
 }
@@ -207,7 +222,106 @@ body {
     text-transform: uppercase;
     background: #FFFFFF;
     background: linear-gradient(to right, #FFFFFF 0%, #a594c7 100%);
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 
+}
+
+.main-container p {
+    margin-top: 42px;
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #7F7F90;
+
+}
+
+.main-btns {
+    margin-top: 46px;
+    display: flex;
+    gap: 16px;
+}
+
+.main-btns .primary-btn {
+    padding: 18px 32px;
+    width: 165px;
+    height: 58px;
+    cursor: pointer;
+    background: linear-gradient(0deg, #000000, #000000), linear-gradient(360deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.05) 100%);
+    box-shadow: inset 0px 10px 25px rgba(230, 221, 254, 0.1);
+    border-radius: 99px;
+    font-family: 'Archivo';
+    border: 2px solid rgba(230, 221, 254, 0.1);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    white-space: nowrap;
+    transition: 0.2s;
+}
+
+.main-btns .primary-btn:hover {
+    filter: drop-shadow(0px 1px 6px #A097B4);
+}
+
+.main-btns .secondary-btn {
+    padding: 18px 32px;
+    width: 166px;
+    height: 58px;
+    background: url(.png), #FFFFFF;
+    box-shadow: 0px 0px 35px rgba(160, 151, 180, 0.5);
+    border-radius: 99px;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: 0.2s;
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+
+.main-btns .secondary-btn:hover {
+    filter: drop-shadow(0px 1px 6px #A097B4);
+}
+
+.phones-container {
+    margin-top: 9rem;
+}
+
+.companies-container {
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.companies-container p {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #7F7F90;
+
+}
+
+.companies-container .company-logos {
+    display: flex;
+    gap: 3.875rem;
 }
