@@ -2,15 +2,27 @@
     --primary-font: 'Archivo', sans-serif;
 }
 
+/* ::selection {
+    background-color: #A097B4;
+    color: black;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    /* background-image: url(../images//BG.svg); */
+    background-image: url(../images//BG.svg);
     background-repeat: no-repeat;
-    background-size: cover;
     background-color: #05050A;
     font-family: var(--primary-font);
+    height: 10000px;
+    background-size: contain;
 }
 
 .header {
+    margin-top: 20px;
     display: flex;
     justify-content: space-evenly;
     color: white;
@@ -24,6 +36,7 @@ body {
     font-size: 1.75rem;
     font-weight: 600;
     gap: 0;
+    cursor: pointer;
 }
 
 .header-brand img {
@@ -64,10 +77,15 @@ body {
 }
 
 .auth-buttons .sign-in-btn {
+    padding: 15px 24px;
+    width: 97px;
+    height: 47px;
+    cursor: pointer;
     background: linear-gradient(0deg, #000000, #000000), linear-gradient(360deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.05) 100%);
     box-shadow: inset 0px 10px 25px rgba(230, 221, 254, 0.1);
     border-radius: 99px;
     font-family: 'Archivo';
+    border: 2px solid rgba(230, 221, 254, 0.1);
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -75,9 +93,121 @@ body {
     text-align: center;
     letter-spacing: -0.02em;
     color: #FFFFFF;
+    white-space: nowrap;
+    transition: 0.2s;
+}
+
+.auth-buttons .sign-in-btn:hover {
+    filter: drop-shadow(0px 1px 6px #A097B4);
+}
+
+.auth-buttons .sign-up-btn {
     padding: 15px 24px;
-    /* border: none; */
-    width: 97px;
+    width: 102px;
     height: 47px;
+    background: url(.png), #FFFFFF;
+    box-shadow: 0px 0px 35px rgba(160, 151, 180, 0.5);
+    border-radius: 99px;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: 0.2s;
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+
+.auth-buttons .sign-up-btn:hover {
+    filter: drop-shadow(0px 1px 6px #A097B4);
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.titles {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titles .first-line {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.first-line span {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 87px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.first-line h1 {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 66px;
+    line-height: 87px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.second-line h3 {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.third-line h3 {
+    position: relative;
+    top: 60px;
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 66px;
+    text-align: center;
+    line-height: 10px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    filter: blur(50px);
+}
+
+.third-line h4 {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 87px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    background: #FFFFFF;
+    background: linear-gradient(to right, #FFFFFF 0%, #a594c7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
 }
