@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div class="light-cursor"></div>
+    <div id="light-cursor"></div>
     <div class="header">
         <div class="header-brand">
             <img src="./images/Sygnet.svg" alt="Vexion">
@@ -90,7 +90,7 @@
     </div>
 
     <script>
-        const cursor = document.querySelector('.light-cursor');
+        const cursor = document.getElementById('#light-cursor');
 
         document.addEventListener('mousemove', e => {
             cursor.style.transform = `translate(${e.clientX-8}px, ${e.clientY-5}px)`;
