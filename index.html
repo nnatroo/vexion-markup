@@ -18,7 +18,7 @@
     <div class="light-cursor"></div>
     <div class="header">
         <div class="header-brand">
-            <img src="./images/Sygnet.svg" alt="Vexion">
+            <img loading="lazy" src="./images/Sygnet.svg" alt="Vexion">
             Vexion
         </div>
         <div class="navbar">
@@ -49,7 +49,7 @@
         </div>
         <p>Control your internet. Check the latency (ms). Keep an eye on the transfer. Test the speed.</p>
         <div class="main-btns">
-            <button class="primary-btn">Learn more</button>
+            <button class="primary-btn learn-more-btn">Learn more</button>
             <button class="secondary-btn">Get the app</button>
         </div>
         <div class="phones-container">
@@ -91,13 +91,13 @@
 
     <div class="app-info-container">
         <div class="app-info-container-left-col">
-            <h3>VEXION APP</h3>
+            <h3 class="vexion-title">VEXION APP</h3>
             <h1>Internet made <br> effortless</h1>
             <p>Our app makes your internet control smarter than <br> you think.</p>
-            <button>Get the app</button>
+            <button class="get-the-app-btn">Get the app</button>
         </div>
         <div class="app-info-container-mid-col">
-            <img width="722px" src="./images/PhoneImage.svg" alt="" srcset="">
+            <img loading="lazy" width="722px" src="./images/PhoneImage.svg" alt="" srcset="">
         </div>
         <div class="app-info-container-right-col">
             <div class="check-the-latency left-bar">
@@ -106,7 +106,8 @@
             </div>
             <div class="check-the-latency left-bar">
                 <h4>Test the speed</h4>
-                <p>Measure the speed and quality of <br> your Internet connection using our <br> app and the world's most reliable <br> test.</p>
+                <p>Measure the speed and quality of <br> your Internet connection using our <br> app and the world's
+                    most reliable <br> test.</p>
             </div>
             <div class="check-the-latency left-bar">
                 <h4>Control your transfer</h4>
@@ -115,11 +116,45 @@
         </div>
     </div>
 
+    <div class="app-flow-container">
+        <div class="app-flow-container-image">
+            <img loading="lazy" width="576px" src="./images/EasySelfInstalation.svg" alt="">
+        </div>
+        <div class="app-flow-container-content">
+            <h3 class="vexion-title">VEXION APP</h3>
+            <h1>EASY SELF <br> INSTALLATION</h1>
+            <p>Create an account to determine the best place to <br> set up before installation.</p>
+            <div class="app-flow-container-content-buttons">
+                <button class="sign-in-btn">Sign in</button>
+                <button class="sign-up-btn">Sign up</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="app-flow-container reverse">
+        <div class="app-flow-container-image">
+            <img loading="lazy" width="576px" src="./images/EasySelfInstalation.svg" alt="">
+        </div>
+        <div class="app-flow-container-content">
+            <h3 class="vexion-title">VEXION APP</h3>
+            <h1>EASY SELF <br> INSTALLATION</h1>
+            <p>Create an account to determine the best place to <br> set up before installation.</p>
+            <button class="get-the-app-btn">Get the app</button>
+        </div>
+    </div>
+
+    <div class="about-card-wrapper">
+        <div class="about-card-container">
+            <h1>JOIN TO OUR <br> COMMUNITY</h1>
+            <button class="learn-more-btn">Learn more</button>
+        </div>
+    </div>
+
     <script>
         const cursor = document.querySelector('.light-cursor');
 
         document.addEventListener('mousemove', e => {
-            cursor.style.transform = `translate(${e.clientX-8}px, ${e.clientY-5}px)`;
+            cursor.style.transform = `translate(${e.clientX - 8}px, ${e.clientY - 5}px)`;
         });
     </script>
 </body>
