@@ -523,7 +523,7 @@ body {
 }
 
 .app-info-container-mid-col img {
-    padding-top: 800px;
+    margin-top: 400px;
     position: absolute;
     right: 50%;
     left: 50%;
@@ -710,7 +710,7 @@ body {
 #footer-get-the-app-btn {
     margin-top: 0;
     margin-bottom: 10rem;
-    margin-right: 12px;
+    margin-left: 38px;
 }
 
 .footer-right-col {
