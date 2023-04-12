@@ -30,9 +30,9 @@ body {
     background-repeat: no-repeat;
     background-color: #05050A;
     font-family: var(--primary-font);
-    height: 10000px;
+    /* height: 10000px; */
     background-size: contain;
-    /* cursor: url('/fv.svg') 20 20, auto; */
+    cursor: url('/cursor.png') 20 20, auto;
 }
 
 .header {
