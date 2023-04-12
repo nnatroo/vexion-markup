@@ -30,7 +30,6 @@ body {
     background-repeat: no-repeat;
     background-color: #05050A;
     font-family: var(--primary-font);
-    height: 10000px;
     background-size: contain;
     cursor: url('/cursor.png') 20 20, auto;
 }
@@ -514,12 +513,12 @@ body {
     transition: 0.2s;
 }
 
-.app-info-container-left-col button:hover {
+.get-the-app-btn:hover {
     transform: scale(1.1);
     box-shadow: 0px 0px 60px rgba(184, 176, 201, 0.5);
 }
 
-.app-info-container-left-col button:active {
+.get-the-app-btn button:active {
     transform: scale(1);
 }
 
@@ -672,3 +671,79 @@ body {
     transition: 0.2s;
 }
 
+.footer-top-hr-wrapper {
+    margin-top: 18rem;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-top-hr {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-top-hr .main-img {
+    width: 100px;
+    margin-inline: 2rem;
+}
+
+.footer {
+    margin-top: 3rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    margin-bottom: 6rem;
+}
+
+.footer-left-col {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+
+.footer-mid-col {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-get-the-app-btn {
+    margin-top: 0;
+    margin-bottom: 10rem;
+    margin-right: 12px;
+}
+
+.footer-right-col {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+
+.footer li {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+    color: #7F7F90;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.footer li:hover {
+    text-shadow: 1px 1px 135px #fff;
+    color: white;
+
+}
+
+.footer-mid-col span {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #7F7F90;
+}
