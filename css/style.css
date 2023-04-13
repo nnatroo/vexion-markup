@@ -84,7 +84,7 @@ body {
 }
 
 .navbar li:hover {
-    color: #aeaebb;
+    color: #ffffff;
     transform: scale(1.05);
     filter: drop-shadow(0px 4px 10px #A097B4);
 }
